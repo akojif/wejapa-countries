@@ -16,6 +16,18 @@ export default {
 </script>
 
 <style>
+/* Default variable colours */
+:root {
+  --primary: hsl(0, 0%, 98%); /* Light Mode Background */
+  --secondary: hsl(0, 0%, 100%); /* Light Mode Elements */
+  --text-color: hsl(200, 15%, 8%); /* Light Mode Text */
+}
+
+[data-theme="dark"] {
+  --primary: hsl(207, 26%, 17%); /* Dark Mode Background */
+  --secondary: hsl(209, 23%, 22%); /* Dark Mode Elements */
+  --text-color: hsl(0, 0%, 100%); /* Dark Mode Text & Light Mode Elements  */
+}
 @import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
 
 * {
