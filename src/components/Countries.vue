@@ -6,17 +6,6 @@
     <a href="index.html">
       <img src="../assets/logo.png" class="logo"/>
       </a>
-      <div class="toggle-btn">
-        <i class="material-icons-round">
-          {{ toggle ? "wb_sunny" : "brightness_2" }}
-        </i>
-        <p>{{ toggle ? toDark() : toLight() }}</p>
-        <!-- Toggle Switch -->
-        <label class="switch">
-          <input type="checkbox" v-model="toggle" />
-          <span class="slider round"></span>
-        </label>
-      </div>
       </div>
 
       <br><br>
