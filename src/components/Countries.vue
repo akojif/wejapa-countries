@@ -167,7 +167,7 @@ export default {
   border-radius: 6px;
   font-family: 'Gilroy', sans-serif !important;
   font-size: 16px !important;
-  background: url('../assets/down.svg') no-repeat right;
+  background: url('../assets/dropdown.svg') no-repeat right;
   background-size: 22px 22px;
   cursor: pointer;
   -webkit-appearance: none;
