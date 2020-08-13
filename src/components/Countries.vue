@@ -48,24 +48,17 @@
         </div>
 
     
-       <div class="col-md-6">
-          <div class="card mx-auto" style="width: 22rem;">
-            <div class="card-header text-white" style=" background: #42b983">Details</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" v-if="country">
-                <span class="float-left">Country:</span>
-                {{country}}
-              </li>
-              <li class="list-group-item" v-if="state">
-                <span class="float-left">State:</span>
-                {{state}}
-              </li>
-              <li class="list-group-item" v-if="city">
-                <span class="float-left">City :</span>
-                {{city}}
-              </li>
-            </ul>
-          </div>
+        <div class="column-2">
+            <div class="selected-options">
+            <p v-if="selectedCountry"><span class="s-o">Country:</span> {{ selectedCountry }}</p>
+            <br>
+
+            <p v-if="selectedState"><span class="s-o">State:</span> {{ selectedState }}</p>
+            <br>
+
+            <p v-if="selectedCity"><span class="s-o">City:</span> {{ selectedCity }}</p>
+            </div>
+
         </div>
       </div>
 </template>
