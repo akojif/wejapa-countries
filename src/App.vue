@@ -1,20 +1,17 @@
 <template>
   <div id="app">
     <countries></countries>
-    <Footer/>
   </div>
   
 </template>
 
 <script>
 import countries from './components/Countries.vue'
-import footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     'countries': countries,
-    footer
   
   }
 }
