@@ -1,7 +1,7 @@
 <template>
     <div class="container row">
 
-    
+      
     <div class="nav">
     <a href="index.html">
       <img src="../assets/logo.png" class="logo"/>
@@ -14,7 +14,7 @@
 
         <div class="column country-info">
             <form>
-            
+                   
                     <div class="form-controls">
                         <label for="countries" class="select-label">Select Country</label>
                         <select name="countries" id="countries" v-model="selectedCountry" @change="onCountrySelect($event)" class="count-select">
@@ -23,7 +23,7 @@
                     </div>
                     <br><br>
 
-            
+                    
                     <div class="form-controls">
                         <label for="state" class="select-label">Select State</label>
                         <select name="states" id="states" v-model="selectedState" @change="onStateSelect($event)" class="count-select">
@@ -35,6 +35,7 @@
                     </div>
                     <br><br>
 
+                    
                     <div class="form-controls">
                         <label for="cities" class="select-label">Select City</label>
                         <select name="cities" id="cities" v-model="selectedCity" class="count-select">
@@ -47,7 +48,7 @@
             </form>
         </div>
 
-    
+     
         <div class="column-2">
             <div class="selected-options">
             <p v-if="selectedCountry"><span class="s-o">Country:</span> {{ selectedCountry }}</p>
@@ -60,7 +61,7 @@
             </div>
 
         </div>
-      </div>
+    </div>
 </template>
 
 <script>
@@ -112,6 +113,7 @@ export default {
                 this.cities = city
                 this.cityError = false
             }
+
         }
     }
 }
@@ -120,6 +122,7 @@ export default {
 <!-- CSS -->
 <style scoped>
 @import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
+
 .nav {
   position: relative;
   width: 100%;
@@ -128,10 +131,12 @@ export default {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .nav a {
     text-decoration: none !important;
     -webkit-tap-highlight-color: transparent !important;
 }
+
 .logo {
   position: relative;
   width: 42px !important;
@@ -140,13 +145,16 @@ export default {
   left: 5%;
   transform: translate(-5%, -50%);
 }
+
 .title {
   text-align: center;
 }
+
 .country-info {
     padding: 20px;
     font-family: 'Gilroy', sans-serif !important;
 }
+
 .count-select  {
   width: 20em;
   height: 2.4em;
@@ -165,11 +173,13 @@ export default {
   -webkit-appearance: none;
   background-position-x: 17.8em;
 }
+
 .count-option {
     display: block;
     margin-left: 20px;
     font-family: 'Gilroy', sans-serif !important;
 }
+
 .column {
     float: left;
     width: 50%;
@@ -177,6 +187,7 @@ export default {
     margin-bottom: 3em !important;
     height: auto;
 }
+
 .column-2 {
     float: left;
     width: 50%;
@@ -184,11 +195,13 @@ export default {
     margin-bottom: 3em !important;
     height: auto;
 }
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .empty {
     border: 1px solid;
     background: rgb(226, 64, 64);
@@ -199,18 +212,22 @@ export default {
     border-radius: 6px;
     margin-top: 20px;
 }
+
 .empty p {
     position: relative;
     top: 50% !important;
     transform: translateY(-50%) !important;
 }
+
 .selected-options {
     margin-top: 10px;
 }
+
 .select-label, .s-o {
   font-size: 18px;
   font-weight: bold;  
 }
+
 /* Media Queries */
 /* 1024px */
 @media screen and (max-width: 1024px) {
@@ -219,12 +236,14 @@ export default {
     width: 50%;
     padding-left: 12% !important;
 }
+
 .column-2 {
     float: left;
     width: 50%;
     padding-left: 10% !important;
 }
 }
+
 /* 768px */
 @media screen and (max-width: 768px) {
   .column {
@@ -232,12 +251,14 @@ export default {
     width: 50%;
     padding-left: 8% !important;
 }
+
 .column-2 {
     float: left;
     width: 50%;
     padding-left: 10% !important;
 }
 }
+
 /* 575px */
 @media screen and (max-width: 575px) {
   .column {
@@ -247,6 +268,7 @@ export default {
     margin-bottom: 3em !important;
     height: auto;
 }
+
 .column-2 {
     position: relative;
     margin-bottom: 3em;
@@ -257,38 +279,46 @@ export default {
     height: auto;
 }
 }
+
 /* 414px */
 @media screen and (max-width: 414px) {
   .column, .column-2 {
     padding-left: 12% !important;
 }
 }
+
 /* 375px */
 @media screen and (max-width: 375px) {
   .column, .column-2 {
     padding-left: 8% !important;
 }
 }
+
 /* 360px */
 @media screen and (max-width: 360px) {
   .column, .column-2 {
     padding-left: 6% !important;
 }
 }
+
 /* 320px */
 @media screen and (max-width: 320px) {
   .title {
     font-size: 28px !important;
   }
+
   .column, .column-2 {
     padding-left: 8% !important;
 }
+
 .count-select {
   width: 17em !important;
   background-position-x: 14.8em;
 }
+
 .empty {
   width: 17em !important;
 }
 }
 </style>
+
