@@ -2,7 +2,6 @@
   <div id="app">
     <countries></countries>
   </div>
-  
 </template>
 
 <script>
@@ -11,8 +10,7 @@ import countries from './components/Countries.vue'
 export default {
   name: 'App',
   components: {
-    'countries': countries,
-  
+    'countries': countries
   }
 }
 </script>
